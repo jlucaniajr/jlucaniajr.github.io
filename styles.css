@@ -1,12 +1,8 @@
-p { 
+body { 
     text-align: center;   
     color: red;
 }
-#para1 {
+h1 {
     text-align: center;   
     color: blue;
-}
-.center {
-    text-align: center;   
-    color: green;
 }

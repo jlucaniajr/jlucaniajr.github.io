@@ -1,9 +1,72 @@
 body {
-    background: #19a8c1;
-    font-family:"Times New Roman", Times, serif;
-    margin: 40px;
-}
-h1 {
+    background: #1620dd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ 
+ 
+ .assignments {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ 
+ .assignment {
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: #dadada;
+ }
+ 
+ 
+ .assignment img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid #ff37f2;
+    display: block;
+    margin: auto;
+ }
+ 
+ 
+ .assignment img:hover {
+    border: 2px solid black;
+ }
+ 
+ 
+ /* Make embedded YouTube videos responsive */
+ .assignment iframe {
+    width: 100%;             /* Make the iframe take up the full width of its container */
+    height: auto;            /* Automatically adjust height to maintain aspect ratio */
+    max-width: 560px;        /* Optional: Maximum width to ensure it doesn't stretch too wide */
+    max-height: 315px;       /* Optional: Maximum height to maintain aspect ratio */
+    display: block;          /* Make the iframe a block element for proper centering */
+    margin: auto;            /* Center the iframe horizontally */
+    border: none;            /* Remove default border */
+ }
+ 
+ 
+ h1 {
+    color: bisque;
     text-align: center;
-    color: #6f7bfc;
-}
+ }
+ 
+ 
+ h1:hover {
+    color: black;
+ }
+ 
+ 
+ h2 {
+    text-align: center;
+ }
+ 
+ 
+ a {
+    text-decoration: none;
+    color: bisque;
+ }
+ 
+ 
+ a:hover {
+    color: white;
+ }
+ 

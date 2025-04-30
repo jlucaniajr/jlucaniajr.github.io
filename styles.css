@@ -1,72 +1,151 @@
+/* Page Background & Font */
 body {
-    background: #1620dd;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
- 
- 
- .assignments {
-    display: flex;
-    flex-wrap: wrap;
- }
- 
- 
- .assignment {
-    width: 30%;
-    margin: 10px;
-    padding: 20px 10px;
-    background: #dadada;
- }
- 
- 
- .assignment img {
-    width: 200px;
-    margin: 10px;
-    border: 2px solid #ff37f2;
-    display: block;
-    margin: auto;
- }
- 
- 
- .assignment img:hover {
-    border: 2px solid black;
- }
- 
- 
- /* Make embedded YouTube videos responsive */
- .assignment iframe {
-    width: 100%;             /* Make the iframe take up the full width of its container */
-    height: auto;            /* Automatically adjust height to maintain aspect ratio */
-    max-width: 560px;        /* Optional: Maximum width to ensure it doesn't stretch too wide */
-    max-height: 315px;       /* Optional: Maximum height to maintain aspect ratio */
-    display: block;          /* Make the iframe a block element for proper centering */
-    margin: auto;            /* Center the iframe horizontally */
-    border: none;            /* Remove default border */
- }
- 
- 
- h1 {
-    color: bisque;
-    text-align: center;
- }
- 
- 
- h1:hover {
-    color: black;
- }
- 
- 
- h2 {
-    text-align: center;
- }
- 
- 
- a {
-    text-decoration: none;
-    color: bisque;
- }
- 
- 
- a:hover {
-    color: white;
- }
- 
+   background: #1620dd; /* Original blue */
+   font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   color: #1A1A1A;
+   line-height: 1.6;
+   scroll-behavior: smooth;
+}
+
+/* Header */
+h1 {
+   color: bisque;
+   text-align: center;
+   margin: 40px auto 20px;
+   font-size: 2.4rem;
+   background-color: #1620dd;
+   padding: 10px 20px;
+   display: inline-block;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1:hover {
+   color: black;
+}
+
+/* Subheadings */
+h2 {
+   text-align: center;
+   color: bisque;
+   margin: 10px 0 20px;
+   font-size: 1.5rem;
+}
+
+/* Link Styling */
+a {
+   text-decoration: none;
+   color: rgb(219, 45, 253);
+   font-weight: bold;
+}
+
+a:hover {
+   color: white;
+}
+
+/* Assignments Grid */
+.assignments {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 1300px;
+   margin: auto;
+   padding: 30px 5%;
+}
+
+/* Each Assignment Card */
+.assignment {
+   width: 28%;
+   margin: 15px;
+   padding: 20px;
+   background: #dadada;
+   border-radius: 15px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+.assignment:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Assignment Images */
+.assignment img {
+   width: 200px;
+   margin: 10px auto;
+   border: 3px solid #ff37f2;
+   display: block;
+   border-radius: 6px;
+   transition: border 0.2s;
+}
+
+.assignment img:hover {
+   border: 3px solid black;
+}
+
+/* Paragraphs */
+.assignment p {
+   font-size: 1rem;
+   color: #000;
+   margin: 10px auto;
+   max-width: 90%;
+}
+
+/* Embedded YouTube Videos */
+.assignment iframe {
+   width: 100%;
+   max-width: 300px;
+   height: 169px;
+   margin: 15px auto;
+   border: none;
+   border-radius: 8px;
+   display: block;
+}
+
+/* Platform Toggle Buttons (if needed) */
+.platform-toggle {
+   color: #1a73e8;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.platform-toggle:hover {
+   text-decoration: underline;
+}
+
+/* Scroll Progress Bar */
+.progress-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #f3f3f3;
+   height: 8px;
+   z-index: 10000;
+}
+
+.progress-bar {
+   width: 0%;
+   height: 100%;
+   background-color: #1F2F3F;
+   transition: width 0.1s ease-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+   .assignment {
+       width: 90%;
+   }
+
+   h1 {
+       font-size: 1.75rem;
+   }
+
+   h2 {
+       font-size: 1.25rem;
+   }
+}
